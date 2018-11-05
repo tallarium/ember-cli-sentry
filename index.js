@@ -19,7 +19,7 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    let ravenPath = path.dirname(resolve.sync('raven-js/dist/raven.js'));
+    let ravenPath = path.dirname(resolve.sync('@tallarium/raven-js/dist/raven.js'));
     let ravenTree = new Funnel(ravenPath, {
       files: ['raven.js'],
     });
